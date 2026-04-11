@@ -1,0 +1,13 @@
+<!-- Extending the base layout from the layout.html -->
+{% extends "static/layout.html" %}
+
+{% block title %} Delete List {% endblock title %}
+
+{% block content %}
+    <h1 class="text-center">Are you sure you want to delete this list?</h1>
+    <form method="post" class="text-center">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Yes</button>
+        <a href="{% url 'show_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+<!-- Extending the base layout from the layout.html file-->
+
+{% extends "static/layout.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<h1 class="text-center">List Form</h1>
+<form class="jumbotron" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button class="btn btn-success btn-block" type="submit">Save List</button>
+</form>
+{% endblock %}
