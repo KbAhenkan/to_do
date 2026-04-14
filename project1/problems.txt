@@ -3,3 +3,4 @@ To-Do List App
 1. Whenever I close my PC, and turn it back on, it eems like django hasnt been installed in my project and so I have to always spend like an hour finding why cause the previous day, it was working just perfectly.
 2. I was not creating the virtual environment inside the porject folder
 3. I was installing django before activating the virtual environment
+4. I was finding problems connecting the views to the urls.py at the app level

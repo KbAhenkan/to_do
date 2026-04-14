@@ -14,4 +14,11 @@
         </p>
         <a href="{% url 'show_list'%}" class="btn btn-primary btn-lg" role="button">View List</a>
     </div>
+    <div class="container">
+        <p>Welcome, {{request.user.username}}</p>
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    </div>
 {% endblock %}
